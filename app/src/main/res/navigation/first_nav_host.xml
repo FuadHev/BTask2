@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_nav_host"
+    app:startDestination="@id/aFragment">
+
+    <fragment
+        android:id="@+id/aFragment"
+        android:name="com.fuadhev.mytask2.ui.fragments.AFragment"
+        android:label="A Fragment"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_AFragment_to_BFragment"
+            app:destination="@id/bFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bFragment"
+        android:name="com.fuadhev.mytask2.ui.fragments.BFragment"
+        android:label="fragment_b"
+        tools:layout="@layout/fragment_b" />
+</navigation>
